@@ -12,8 +12,8 @@ gem "devise", "~> 1.4.9"
 gem "cancan", "~> 1.6.7"
 #gem 'twitter' , '~> 1.7.2'
 #gem "twitter", "~> 2.0.0.rc.1"
-gem "omniauth", "~> 1.0.0"
-gem 'omniauth-twitter'
+gem 'omniauth' , "~> 0.3.2"
+#gem 'omniauth-twitter'
 
 # Gems used only for assets and not required
 # in production environments by default.
