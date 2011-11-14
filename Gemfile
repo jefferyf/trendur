@@ -16,6 +16,8 @@ gem "twitter", "~> 2.0.0.rc.1"
 #gem 'omniauth' , "~> 0.3.2"
 gem 'omniauth-twitter'
 gem "twitter-text", "~> 1.4.13"
+gem "heroku", "~> 2.14.0"
+gem "pg"
 
 # Gems used only for assets and not required
 # in production environments by default.
