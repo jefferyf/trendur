@@ -1,0 +1,110 @@
+/* Trendur Styles */
+
+body { background: #1A1917 url(<%= asset_path "bkgd.jpg" %>) no-repeat center top; font-family:Arial, Helvetica, sans-serif }
+
+header { height: 50px; background: url(<%= asset_path "top_bar.png" %>) repeat-x 0px 0px; position: relative; }
+
+a#logo { background: url(<%= asset_path "logo.png" %>) no-repeat 0px 0px; height: 77px; width: 199px; text-indent: -9999em; display: block; overflow: hidden; float:left }
+
+.wrapper { margin-right: auto; margin-left: auto; width: 960px; position: relative; }
+
+.bkgd_top { background: url(<%= asset_path "bkgd_top.png" %>) no-repeat 0px 0px; height: 42px; width: 73px; position: absolute; z-index: 10; top: 8px; right: -59px; }
+
+nav#main_nav {width:132px; float:left; padding:6px 0 6px 6px; background:url(<%= asset_path "main_nav.png" %>) repeat-x bottom left #fff; margin-top:160px;
+-webkit-box-shadow: 0px 0px 4px #000; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+     -moz-box-shadow: 0px 0px 4px #000; /* FF3.5 - 3.6 */
+          box-shadow: 0px 0px 4px #000; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+		   -webkit-border-radius: 4px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+     -moz-border-radius: 4px 0 0 4px; /* FF1-3.6 */
+          border-radius: 4px 0 0 4px; /* Opera 10.5, IE9, Saf5, Chrome, FF4*/}
+	nav#main_nav ul {padding:0; margin:0; background:#000 }
+	nav#main_nav ul li {padding:0; margin:0; list-style:none; position:relative; height:26px}
+	nav#main_nav ul li a {display:block; clear:both; padding:0 10px; border-bottom:solid 1px #333; color:#fff; text-decoration:none; font-size:13px; font-weight:bold; height:26px; line-height:26px; padding-top:1px}
+	nav#main_nav ul li a:hover {position:absolute; top:-7px; left:-12px; height:32px; width:150px; background:url(<%= asset_path "main_nav_hover.png" %>) top left no-repeat; color:#000; z-index:100; border:none; padding:7px 0 0 20px}
+		  
+#container {padding:20px 0}
+
+#main_container {float:right; width:820px;}
+	
+#announcements {height:80px;background:#fff;width:822px;float:right;
+	-webkit-box-shadow: 0px 0px 6px #000; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow: 0px 0px 6px #000; /* FF3.5 - 3.6 */
+	box-shadow: 0px 0px 6px #000; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+	-webkit-border-radius: 4px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+	-moz-border-radius: 4px; /* FF1-3.6 */
+	border-radius: 4px; /* Opera 10.5, IE9, Saf5, Chrome, FF4*/
+	position: relative;
+}
+		  
+#main_feed {width:550px;padding:60px 0 20px 0;background:#F2F2F2;float:left;margin-top:25px;
+	-webkit-box-shadow: 0px 0px 4px #000; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+	-moz-box-shadow: 0px 0px 4px #000; /* FF3.5 - 3.6 */
+	box-shadow: 0px 0px 4px #000; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+	position: relative;}
+
+aside { float: right; width: 266px; padding: 6px 6px 6px 0px; margin-top: 25px; background: #FFF url(<%= asset_path "right_col.png" %>) repeat-x left bottom; -webkit-box-shadow: 0px 0px 4px #000; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */ -moz-box-shadow: 0px 0px 4px #000; /* FF3.5 - 3.6 */ box-shadow: 0px 0px 4px #000; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */ }
+
+#user_area { line-height: 50px; background: url(<%= asset_path "user_bar.png" %>) repeat-x 0px 1px; height: 50px; width: 570px; position: absolute; z-index: 100; left: -10px; top: -10px; padding:0; -webkit-box-shadow: 0px 0px 2px #000; /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */ -moz-box-shadow: 0px 0px 2px #000; /* FF3.5 - 3.6 */ box-shadow: 0px 0px 2px #000; /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */ -webkit-border-radius: 6px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */ -moz-border-radius: 6px; /* FF1-3.6 */ border-radius: 6px; /* Opera 10.5, IE9, Saf5, Chrome, FF4*/ border-bottom:solid 1px #999 }
+
+h2 { margin: 0px 0px 5px; padding: 0px; background: url(<%= asset_path "h2.png" %>) no-repeat 0px 0px; text-indent: -9999em; height: 24px; overflow: hidden; }
+h2#pop { width: 163px; float:left }
+h2#trends { background-position:0 -24px; width:80px; float: left; }
+
+#popular { background: url(<%= asset_path "popular_bkgd.png" %>) repeat-x 0px 0px; height: 155px; padding-left: 15px; padding-top: 15px; }
+
+#trend_tags { padding: 15px 0 0 15px; }
+
+#trend_tags h3 { float: left; line-height: 24px; vertical-align: bottom; height: 24px; width: 140px; font-size: 13px; font-weight: bold; color: #1A1A1A; margin: 0px; padding: 0px 0px 0px 5px; text-transform: uppercase; }
+
+#trend_container { clear: both; }
+
+a#stream_btn { background: url(<%= asset_path "add_account.png" %>) no-repeat 0px 0px; height: 50px; width: 230px; text-indent: -9999em; display: block; overflow: hidden; position: relative; float:left; margin-left:3px; }
+	a#stream_btn:hover {background-position:-230px 0}
+
+a#twitter_signin { float: right; padding-right: 12px; }
+
+img.tweet-image { float: left; padding-left:20px }
+.tweet-content { min-height:48px; font-size:15px; margin-left: 85px; padding-right:20px }
+.tweet-row {display:block; color:#444444}
+.tweet-user-name {font-weight:bold; font-size:16px}
+.tweet-user-name a {color:#000}
+.tweet-full-name a{color:#999999; font-weight:normal; font-size:15px}
+.tweet-full-name a:hover, .tweet-user-name a:hover {text-decoration:underline}
+a.tweet-timestamp{font-size:11px; color:#999}
+.divider { background: #ccc; height: 1px; border-bottom: 1px solid #FFF; margin:10px 0 }
+
+#popular img.tweet-image {display:none}
+	#popular .tweet-content {height:auto; font-size:12px; margin-left:0; float:left; width:146px}
+	#popular .tweet-row {color:#fff}
+	#popular .tweet-user-name {font-size:12px}
+	#popular .tweet-user-name a {color:#fff}
+	#popular .tweet-full-name a{color:#fff; font-size:10px}
+	#popular a.tweet-timestamp {color:#ccc; display:none}
+
+ul#tags { margin: 0px 0px 0px 15px; padding: 0px; float: left; }
+	ul#tags li { margin: 0 0 5px 0; padding: 0px; list-style: none; }
+	ul#tags li a { display: block; color: #4D4D4D; font-size: 13px; font-weight: bold; }
+	ul#tags li a:hover {color:#000}
+	ul#tags li.num1 a{ font-size: 16px; }
+	ul#tags li.num2 a{font-size:15px}
+	ul#tags li.num3 a{font-size:14px}
+	ul#tags li.num4 a{font-size:13px}
+	ul#tags li.num5 a{font-size:12px}
+	ul#tags li.num6 a{font-size:11px}
+	ul#tags li.num7 a{font-size:10px}
+
+img.icon { float: left; }
+
+.advert {clear: both;border:solid 1px #ccc;border-left:none;background: #CCC;height: 160px;}
+
+a.minus {background: url(<%= asset_path "remove_icon.png" %>) repeat-x 0px 0px; text-indent:-9999em; overflow:hidden; display:block; height:40px; width: 40px;position: absolute;z-index: 11;top: -20px;right: -20px;}
+	a.minus:hover {background-position:-40px 0}
+	
+form#header_form {padding:0; margin:0; float:right; position:relative; width:130px}
+	input.search {height:20px; padding:2px 4px 0 24px; width:106px; background:#fff; color:#666; font-size:12px; border:none; margin-top:14px;
+	  -webkit-border-radius: 4px; /* Saf3-4, iOS 1-3.2, Android <e;1.6 */
+     -moz-border-radius: 4px; /* FF1-3.6 */
+          border-radius: 4px; /* Opera 10.5, IE9, Saf5, Chrome, FF4*/}
+	input.search_btn {border:none; margin:0; padding:0; text-indent:-9999em; display:block; position:absolute; top:18px; left:4px; background:url(<%= asset_path "search_icon.png" %>) left top no-repeat; width:14px; height:14px; overflow:hidden; letter-spacing:-9999em; font-size:1px; color:#fff}
+		input.search_btn:hover {background-position:-14px 0}
+	

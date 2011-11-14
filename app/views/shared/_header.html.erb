@@ -1,0 +1,36 @@
+<header>
+  <div class="wrapper clearfix"> 
+    <a href="#" id="logo">trendur</a>
+    
+    <div>
+      <div id="user_nav">
+        <% if user_signed_in? %>
+          Signed in as <%= current_user.email %>. Not you?
+          <%= link_to "Sign out", destroy_user_session_path %>
+        <% else %>
+          <%= link_to "Sign in with Twitter" , "/auth/twitter" %>
+        <% end %>
+      </div>
+
+      <div id='navbar'>
+      	<ul>
+      		<% if can? :manage, @users %>
+      		<li><%= link_to 'User Management', {:controller => 'user_management', :action => 'index'} %></li>
+      		<% end %>
+      		<% if can? :edit, current_user %>
+      		<li><%= link_to 'Profile', {:controller => 'user', :action => 'edit', :id => current_user } %></li>
+      		<% end %>
+      		<% if can? :manage, Authentication %>
+      		<li><%= link_to 'Authentications', {:controller => 'authentications', :action => 'index'} %></li>
+      		<% end %>		
+      	</ul>
+      </div>
+    </div>
+    
+  	<form action="" method="get" id="header_form">
+    	<input name="" type="text" class="search" />
+        <input name="" type="submit" class="search_btn" />
+    </form>
+    <div class="bkgd_top"></div>
+  </div>
+</header>

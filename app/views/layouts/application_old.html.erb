@@ -1,0 +1,285 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+<title><%= yield(:title) || "Untitled" %></title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<%= stylesheet_link_tag 'application' %>
+<%= javascript_include_tag 'application' %>
+<%= csrf_meta_tag %>
+<%= yield(:head) %>
+</head>
+
+<body>
+
+<header>
+  <div class="wrapper clearfix"> <a href="#" id="logo">trendur</a>
+  	<form action="" method="get" id="header_form">
+    	<input name="" type="text" class="search" />
+        <input name="" type="submit" class="search_btn" />
+    </form>
+    <div class="bkgd_top"></div>
+  </div>
+</header>
+
+<!-- Container Start -->
+<div id="container" class="wrapper clearfix">
+  <div class="wrapper">
+    <div id="announcements">
+    	<a class="minus" href="#">Remove</a>
+    </div>
+  </div>
+<nav id="main_nav">
+  <ul>
+    <li><a href="#">HOME</a></li>
+    <li><a href="#">POLITICS</a></li>
+    <li><a href="#">BUSINESS</a></li>
+    <li><a href="#">SPORTS</a></li>
+    <li><a href="#">ENTERTAINMENT</a></li>
+    <li><a href="#">TECH</a></li>
+    <li><a href="#">SCIENCE</a></li>
+    <li><a href="#">HEALTH</a></li>
+    <li><a href="#">TRAVEL</a></li>
+    <li><a href="#">WEATHER</a></li>
+  </ul>
+</nav>
+  <!-- Main Feed Start -->
+  <div id="main_feed">
+    <div id="user_area"> 
+		  <a href="#" id="stream_btn">Add an Account to Stream</a> 
+		  <a href="#" id="twitter_signin">
+		    <%= image_tag "sign-in-with-twitter-d.png", :alt => "Sign in with twitter", :size => "151x24" %> 
+		  </a> 
+		</div>
+		
+<!-- Tweet Start -->
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <div class="tweet-row"> <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> </div>
+  <div class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </div>
+  <div class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></div>
+</div>
+<!-- Tweet End -->
+<div class="divider"></div>
+<!-- Tweet Start --> 
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <div class="tweet-row"> <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> </div>
+  <div class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </div>
+  <div class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></div>
+</div>
+<!-- Tweet End -->
+<div class="divider"></div>
+<!-- Tweet Start --> 
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <div class="tweet-row"> <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> </div>
+  <div class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </div>
+  <div class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></div>
+</div>
+<!-- Tweet End -->
+<div class="divider"></div>
+<!-- Tweet Start --> 
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <div class="tweet-row"> <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> </div>
+  <div class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </div>
+  <div class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></div>
+</div>
+<!-- Tweet End -->
+<div class="divider"></div>
+<!-- Tweet Start --> 
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <div class="tweet-row"> <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> </div>
+  <div class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </div>
+  <div class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></div>
+</div>
+<!-- Tweet End -->
+<div class="divider"></div>
+<!-- Tweet Start --> 
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <div class="tweet-row"> <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> </div>
+  <div class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </div>
+  <div class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></div>
+</div>
+<!-- Tweet End -->
+<div class="divider"></div>
+<!-- Tweet Start --> 
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <div class="tweet-row"> <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> </div>
+  <div class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </div>
+  <div class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></div>
+</div>
+<!-- Tweet End -->
+<div class="divider"></div>
+<!-- Tweet Start --> 
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <div class="tweet-row"> <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> </div>
+  <div class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </div>
+  <div class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></div>
+</div>
+<!-- Tweet End -->
+<div class="divider"></div>
+<!-- Tweet Start --> 
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <div class="tweet-row"> <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> </div>
+  <div class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </div>
+  <div class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></div>
+</div>
+<!-- Tweet End -->
+<div class="divider"></div>
+<!-- Tweet Start --> 
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <div class="tweet-row"> <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> </div>
+  <div class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </div>
+  <div class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></div>
+</div>
+<!-- Tweet End -->
+<div class="divider"></div>
+<!-- Tweet Start --> 
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <div class="tweet-row"> <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> </div>
+  <div class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </div>
+  <div class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></div>
+</div>
+<!-- Tweet End -->
+<div class="divider"></div>
+<!-- Tweet Start --> 
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <div class="tweet-row"> <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> </div>
+  <div class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </div>
+  <div class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></div>
+</div>
+<!-- Tweet End -->  </div>
+  <!-- Main Feed End --> 
+  
+<aside>
+  <div id="popular">
+    <h2 id="pop">Popular Trends</h2>
+    <!-- wrapper for navigator elements -->        <!-- sub navigator #1 --> 
+        <div class="navi"></div> 
+<div id="pages"> 
+    
+    <!-- page #1 --> 
+    <div class="page"> 
+      
+      <!-- inner scrollable #1 --> 
+      <div class="scrollable"> 
+
+        <!-- root element for scrollable items --> 
+        <div class="items">        
+          
+          <!-- item 1  --> 
+	            <div class="item">
+                <img src="/trendur/site/images/science.png" alt="science" />
+			    <!-- Tweet Start -->
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> 
+  <span class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </span>
+  <span class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></span>
+</div>
+<!-- Tweet End -->
+			</div> 
+            
+	  <!-- item 2  --> 
+          <div class="item">
+          <img src="/trendur/site/images/science.png" alt="science" />		    
+			    <!-- Tweet Start -->
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> 
+  <span class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </span>
+  <span class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></span>
+</div>
+<!-- Tweet End -->
+			</div> 
+            
+	<!-- item 3  --> 
+          <div class="item">
+			<%= image_tag("science.png" , :alt => "science") %>
+          		        
+			    <!-- Tweet Start -->
+<img src="images/no_image.png" alt="photo" class="tweet-image">
+<div class="tweet-content">
+  <span class="tweet-user-name"> <a href="#"> Username</a> <span class="tweet-full-name"><a href="#">Internet Exposure</a></span> </span> 
+  <span class="tweet-row"> Panda update explained once again and manual action explained - radically better communication w/ site owners from Googs <a class="pretty-link" href="#">@mattcutts #pubcon</a> </span>
+  <span class="tweet-row"><a class="tweet-timestamp"><span>Nov.9</span></a></span>
+</div>
+<!-- Tweet End -->
+			</div> 
+            
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+  <script type="text/javascript"> 
+// What is $(document).ready ? See: http://flowplayer.org/tools/documentation/basics.html#document_ready
+jQuery(document).ready(function() {
+// horizontal scrollables. each one is circular and has its own navigator instance
+jQuery(".scrollable").scrollable({ circular: true }).navigator(".navi").autoscroll({ interval: 5000  });
+});
+</script>     
+  
+  </div>
+  <div id="trend_tags">
+    <h2 id="trends">Trends:</h2>
+    <h3>Science &amp; Tech</h3>
+    <div id="trend_container"> <img src="images/science_icon.png" alt="" class="icon">
+      <ul id="tags">
+        <li class="num1"><a href="#">Rubix Cube</a></li>
+        <li class="num1"><a href="#">How to clean a toilet</a></li>
+        <li class="num2"><a href="#">Bill Nye</a></li>
+        <li class="num2"><a href="#">Time travel</a></li>
+        <li class="num3"><a href="#">Aliens</a></li>
+        <li class="num3"><a href="#">Fastest car on the planet</a></li>
+        <li class="num3"><a href="#">Renuwable energy</a></li>
+        <li class="num3"><a href="#">Gas clouds</a></li>
+        <li class="num4"><a href="#">George Clooney</a></li>
+        <li class="num4"><a href="#">Carbon footprint</a></li>
+        <li class="num5"><a href="#">Water levels</a></li>
+        <li class="num5"><a href="#">Facts about bees</a></li>
+        <li class="num6"><a href="#">Life on other planets</a></li>
+        <li class="num6"><a href="#">Mars rover</a></li>
+        <li class="num7"><a href="#">Golden Gate Bridge facts</a></li>
+        <li class="num7"><a href="#">Types of airplanes</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="advert"> </div>
+</aside>
+  
+  <footer> </footer>
+</div>
+<!-- Container End --> 
+
+
+<script> // Change UA-XXXXX-X to be your site's ID
+    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script> 
+
+<!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+
+</body>
+</html>

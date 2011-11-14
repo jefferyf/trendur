@@ -1,0 +1,7 @@
+<% title "Edit Category" %>
+
+<h1>Create a new Category</h1>
+
+<% form_for @category do |f| -%>
+  <%= render :partial => "form", :locals => { :f => f } %>
+<% end -%>

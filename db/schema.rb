@@ -10,12 +10,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101030022104) do
+ActiveRecord::Schema.define(:version => 20111112214219) do
 
   create_table "authentications", :force => true do |t|
     t.integer  "user_id"
     t.string   "provider"
     t.string   "uid"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.integer  "list_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -37,6 +44,7 @@ ActiveRecord::Schema.define(:version => 20101030022104) do
     t.string   "last_name"
     t.string   "image_url"
     t.string   "role"
+    t.string   "username"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
