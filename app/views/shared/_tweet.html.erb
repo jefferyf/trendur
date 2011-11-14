@@ -1,0 +1,19 @@
+<!-- Tweet Start -->
+<%= image_tag("#{tweet.user.profile_image_url}" , :alt => "photo" , :class => "tweet-image") %>
+<div class="tweet-content">
+  <div class="tweet-row"> 
+    <span class="tweet-user-name"> 
+      <%= link_to raw(tweet.user.screen_name),
+                  "http://twitter.com/#{raw(tweet.user.screen_name)}" -%>
+      <span class="tweet-full-name">
+        <%= link_to raw(tweet.user.name),
+                    "http://twitter.com/#{raw(tweet.user.screen_name)}" -%>
+      </span> 
+    </span> 
+  </div>
+  <div class="tweet-row"><%= raw(auto_link(tweet.text)) %></div>
+  <div class="tweet-row"><a class="tweet-timestamp"><span><%= tweet.created_at.strftime("%b %d")%></span></a></div>
+  <div style="display:none;"><%= tweet.inspect.to_s %></div>
+</div>
+<!-- Tweet End -->
+<div class="divider"></div>

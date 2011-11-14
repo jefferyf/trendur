@@ -3,13 +3,22 @@ Trendur::Application.routes.draw do
   resources :authentications
 
   match '/auth/:provider/callback' => 'authentications#create' #uses :provider so that it can be any provider, like Twitter, Facebook, or Linked_In
+  match '/auth/failure' => "home#index"
 
   devise_for :users, :controllers => { :registrations => 'registrations' }, :path_names => { :sign_up => "register"}
   devise_scope :user do
     match '/login' => 'devise/sessions#new'
     match '/logout' => 'devise/sessions#destroy'
   end
+  
+  namespace :admin do
+    resources :users
+    resources :categories
+  end
 
+  #resources :categories
+  match "categories" => "categories#index" , :as => "category"
+  match "categories/:name" => "categories#show"
   resources :user, :controller => "user" #Gertig, devise-roles-user-management
   resources :home
 

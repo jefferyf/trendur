@@ -13,25 +13,16 @@
 	<p>Or use the form below:</p>
 <% end %>
 
-  <p><%= f.label :first_name %><br />
-  <%= f.text_field :first_name %></p>
-
-  <p><%= f.label :last_name %><br />
-  <%= f.text_field :last_name %></p>
-
-
-  <p><%= f.label :email %><br />
-  <%= f.text_field :email %></p>
-
 <% if @user.password_required? -%>
   <p><%= f.label :password %><br />
   <%= f.password_field :password %></p>
-
 
   <p><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></p>
 
   <p><%= f.label :role %> <%= f.collection_select :role, User::ROLES, :to_s, :humanize, {:include_blank => true} %></p>
+<% else %>
+  <%= f.hidden_field :role , :value => "notadmin" %>
 <% end -%>
 
   <p><%= f.submit "Sign up" %></p>

@@ -1,0 +1,48 @@
+<h1>Trendur Main Categories</h1>
+
+<div class="toolbar">
+  <ul class="actions">
+    <li>
+      <%= link_to "New Category" , new_admin_category_url , :icon => 'add' -%>
+    </li>
+  </ul>
+</div>
+
+<% unless @categories.blank? %>
+<table border="0" cellspacing="5" cellpadding="5">
+  <tr>
+      <th>Category Name</th>
+  </tr>
+  <% @categories.each do |category| -%>
+  <tr>
+      <td><%= category.name %></td>
+  </tr>
+  <% end -%>
+</table>
+<table class="index">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>List</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @categories.each do |category| -%>
+    <tr>
+      <td><%= category.name %></td>
+      <td><%= "List Name here..." %></td>
+      <td>
+        <%= link_to "edit", admin_edit_document_url(document) %> &nbsp;
+        <%= link_to "delete" , "#", :confirm => "Are you sure?" %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+<% else %>
+<p>No Categories Available</p>
+<% end %>
+
