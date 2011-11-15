@@ -18,7 +18,7 @@ Trendur::Application.routes.draw do
 
   #resources :categories
   match "categories" => "categories#index" , :as => "category"
-  match "categories/:name" => "categories#show"
+  match "categories/:name" => "categories#show" , :as => "categoryshow"
   resources :user, :controller => "user" #Gertig, devise-roles-user-management
   resources :home
 
