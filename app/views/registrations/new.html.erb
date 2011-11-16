@@ -22,6 +22,8 @@
 
   <p><%= f.label :role %> <%= f.collection_select :role, User::ROLES, :to_s, :humanize, {:include_blank => true} %></p>
 <% else %>
+  <p><%= f.label :email %><br />
+  <%= f.text_field :email %></p>
   <%= f.hidden_field :role , :value => "notadmin" %>
 <% end -%>
 

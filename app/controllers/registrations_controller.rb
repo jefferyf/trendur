@@ -2,9 +2,9 @@ class RegistrationsController < Devise::RegistrationsController
   
   #Overide some of Devise registration controller functionality
   #Inherit straight from Devise's RegistrationsController
-  def new
-    redirect_to '/auth/twitter' and return
-  end
+  #def new
+    #redirect_to '/auth/twitter' and return
+  #end
 
 
   def create
