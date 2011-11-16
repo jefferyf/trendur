@@ -27,10 +27,10 @@ class AuthenticationsController < ApplicationController
      
         if authentication #Authentication record exists and Current_User exists
           if current_user && current_user.id != authentication.user_id #Checks if Authentication record already exists
-            flash[:error] = "This LinkedIn connection already exists."
+            flash[:error] = "This Twitter connection already exists."
             redirect_to root_url
           elsif user_signed_in?
-            flash[:notice] = "You have already added Linkedin!"
+            flash[:notice] = "You have already added Twitter!"
             redirect_to root_url
           else
             #This signs a User in if they are taken to /auth/linked_in while no user is signed in
@@ -44,7 +44,7 @@ class AuthenticationsController < ApplicationController
           flash[:notice] = "Connected to LinkedIn successfully."
           redirect_to root_url
 
-          #redirect_to root_url #Gertig, authentications_url
+        #redirect_to root_url #Gertig, authentications_url
         else #New User
           puts "New User"
           user = User.new
@@ -58,6 +58,7 @@ class AuthenticationsController < ApplicationController
             flash[:notice] = "Signed in successfully."
             sign_in_and_redirect(:user, user) #Omniauth method
           else
+            #puts user.errors.inspect
             session[:omniauthhash] = omniauthhash.except('extra') #This saves the hash to a session cookie without the 'extra' piece of the API return
             redirect_to new_user_registration_url
           end
