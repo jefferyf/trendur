@@ -14,6 +14,7 @@ Trendur::Application.routes.draw do
   namespace :admin do
     resources :users
     resources :categories
+    resources :twitter_lists
   end
 
   #resources :categories

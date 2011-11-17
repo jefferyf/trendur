@@ -1,0 +1,20 @@
+<% title "Admin/Twitter List" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @twitter_list.name %>
+</p>
+<p>
+  <strong>Owner:</strong>
+  <%= @twitter_list.owner %>
+</p>
+<p>
+  <strong>Slug:</strong>
+  <%= @twitter_list.slug %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_admin_twitter_list_path(@twitter_list) %> |
+  <%= link_to "Destroy", [:admin, @twitter_list], :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", admin_twitter_lists_path %>
+</p>

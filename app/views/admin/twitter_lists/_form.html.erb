@@ -1,0 +1,16 @@
+<%= form_for [:admin, @twitter_list] do |f| %>
+  <%= errors_for(@twitter_list, "Can't save the List!").html_safe %>
+  <p>
+    <%= f.label :name, "Display Name" %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :owner %><br />
+    <%= f.text_field :owner %>
+  </p>
+  <p>
+    <%= f.label :slug %><br />
+    <%= f.text_field :slug %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
