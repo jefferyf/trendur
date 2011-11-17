@@ -1,0 +1,30 @@
+<% title "Twitter Lists" %>
+<h1>Twitter Lists</h1>
+
+<div class="toolbar">
+  <ul class="actions">
+    <li>
+      <%= link_to "New Twitter List", new_admin_twitter_list_path %>
+    </li>
+  </ul>
+</div>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Owner</th>
+    <th>Slug</th>
+    <th colspan="3">&nbsp;</th>
+  </tr>
+  <% for twitter_list in @twitter_lists %>
+    <tr>
+      <td><%= twitter_list.name %></td>
+      <td><%= twitter_list.owner %></td>
+      <td><%= twitter_list.slug %></td>
+      <td><%= link_to "Show", [:admin, twitter_list] %></td>
+      <td><%= link_to "Edit", edit_admin_twitter_list_path(twitter_list) %></td>
+      <td><%= link_to "Destroy", [:admin, twitter_list], :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%= (Twitter.list_timeline( twitter_list.owner , twitter_list.slug )).nil? ? "No!" : "Yes!" %></td>
+    </tr>
+  <% end %>
+</table>

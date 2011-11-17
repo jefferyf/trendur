@@ -1,7 +1,8 @@
-<% title "Edit Category" %>
+<% title "Trendur::Admin::Edit Category" -%>
 
-<h1>Create a new Category</h1>
+<h1>Editing Category: &#8220;<%= @category.name rescue "no name" %>&#8221;</h1>
 
-<% form_for @category do |f| -%>
+<%= form_for @category do |f| -%>
+  <%= errors_for(@category, "Can't edit the new Category!").html_safe %>
   <%= render :partial => "form", :locals => { :f => f } %>
 <% end -%>
