@@ -1,4 +1,6 @@
 class Admin::CategoriesController < ApplicationController
+  load_and_authorize_resource
+  
   layout "admin"
   
   before_filter :get_resource , :only => [:show, :edit, :update, :destroy]
