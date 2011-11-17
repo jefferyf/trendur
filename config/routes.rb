@@ -1,4 +1,4 @@
-Trendur::Application.routes.draw do
+Trendur::Application.routes.draw do  
 
   resources :authentications
 
@@ -12,11 +12,15 @@ Trendur::Application.routes.draw do
   end
   
   namespace :admin do
+    match "/" => "dashboard#index"
+    match "/user_management" => "user_management#index"
+    resources :authentications
     resources :users
     resources :categories
     resources :twitter_lists
   end
-
+  #match "/admin/user_management"
+  
   #resources :categories
   match "categories" => "categories#index" , :as => "category"
   match "categories/:name" => "categories#show" , :as => "categoryshow"

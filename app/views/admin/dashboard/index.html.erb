@@ -1,0 +1,20 @@
+<h1>Trendur Administration</h1>
+<p>Please select an option...</p>
+
+<ul>
+	<% if can? :manage, @users %>
+	<li><%= link_to 'User Management', {:controller => 'user_management', :action => 'index'} %></li>
+	<% end %>
+	<% if can? :edit, current_user %>
+	<li><%= link_to 'Profile', {:controller => 'user', :action => 'edit', :id => current_user } %></li>
+	<% end %>
+	<% if can? :manage, Authentication %>
+	<li><%= link_to 'Authentications', {:controller => 'authentications', :action => 'index'} %></li>
+	<% end %>		
+	<% if can? :manage , Category %>
+	<li><%= link_to "Categories" , admin_categories_path %></li>
+	<% end %>
+	<% if can? :manage , TwitterList %>
+	<li><%= link_to "Twitter Lists" , admin_twitter_lists_path %></li>
+	<% end %>
+</ul>

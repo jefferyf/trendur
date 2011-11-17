@@ -1,5 +1,5 @@
 class AuthenticationsController < ApplicationController
-  
+  layout "admin"
   load_and_authorize_resource
   #This was generated with Ryanb's nifty-generators
   # rails g nifty:scaffold authentication user_id:integer provider:string uid:string index create destroy

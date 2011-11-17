@@ -24,7 +24,7 @@
       <td><%= link_to "Show", [:admin, twitter_list] %></td>
       <td><%= link_to "Edit", edit_admin_twitter_list_path(twitter_list) %></td>
       <td><%= link_to "Destroy", [:admin, twitter_list], :confirm => 'Are you sure?', :method => :delete %></td>
-      <td><%= (Twitter.list_timeline( twitter_list.owner , twitter_list.slug )).nil? ? "No!" : "Yes!" %></td>
+      <td><%= twitter_list.is_valid_list? ? "Valid List" : "Invalid List" %></td>
     </tr>
   <% end %>
 </table>
